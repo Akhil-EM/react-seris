@@ -20,4 +20,4 @@ export default Greet;///by default we can import it as in any name
 // absence of this key word
 // solution without using if
 // mainly responsible for the ui
-// Stateless/Dumb/Presentational
+// Stateless/Dumb/Presentational  can use states by hooks
