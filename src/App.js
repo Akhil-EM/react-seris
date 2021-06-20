@@ -6,10 +6,11 @@ import EventClass from './components/EventClass'
 import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import ConditionalRendering from './components/ConditionalRendering'
+import ListComponent from './components/ListComponent'
 function App() {
   return (
     <div className="App">
-         <ConditionalRendering/>
+         <ListComponent/>
     </div>
   );
 }
