@@ -1,11 +1,14 @@
 import React from 'react';
 
-const Hello=(props)=>{
+// const Hello=(props)=>{
+// const {name,heroName}=props //also can used as this
+
+const Hello=({name,heroName,children})=>{
     // console.log(props);
     return (
         <div>
-            <h1>Helloo {props.name}. your the {props.heroName}</h1>
-            {props.children}
+            <h1>Helloo {name}. your the {heroName}</h1>
+            {children}
         </div>
     );
 }

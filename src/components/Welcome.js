@@ -3,8 +3,9 @@ import React from 'react';
 class Welcome extends React.Component{
     
     render(){
+        const {heroName,name}=this.props;//destructuring
         return(
-            <h1>Welcome here..... {this.props.name}</h1>
+            <h1>Welcome here..... {name}*****{heroName}</h1>
         );
     }
 }
