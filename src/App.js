@@ -5,10 +5,11 @@ import Welcome from './components/Welcome'
 import EventClass from './components/EventClass'
 import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
+import ConditionalRendering from './components/ConditionalRendering'
 function App() {
   return (
     <div className="App">
-         <ParentComponent/>
+         <ConditionalRendering/>
     </div>
   );
 }
