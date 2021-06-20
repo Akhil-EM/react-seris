@@ -1,0 +1,15 @@
+import React  from "react";
+
+
+// function Greet(){
+//      return (<h1>Good morning user</h1>)
+// }
+
+const Greet=()=>{
+    return(<h1>Hello user . here iam </h1>)
+}
+export default Greet;///by default we can import it as in any name 
+
+// export const Greet=()=>{
+//      return(<h1>Hello user . here iam </h1>)
+// } this let to use only in the name Greet
