@@ -8,11 +8,17 @@ import './App.css';
 // import ConditionalRendering from './components/ConditionalRendering'
 // import ListComponent from './components/ListComponent'
 // import StyleSheet from './components/StyleSheet'
-import Form from './components/Form';
+// import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
+
+
+
+ 
 function App() {
+  
   return (
     <div className="App">
-         <Form/>
+         <LifeCycleA/>
     </div>
   );
 }
