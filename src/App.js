@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import Table from './components/Table';
+// import Table from './components/Table';
+import RefsDemo from './RefsDemo';
 
 // import Hello from './components/Hello'
 // import Welcome from './components/Welcome'
@@ -13,13 +14,12 @@ import Table from './components/Table';
 // import Form from './components/Form';
 // import LifeCycleA from './components/LifeCycleA';
 // import FragmentDemo from './components/FragmentDemo';
-
  
 function App() {
   
   return (
     <div className="App">
-         <Table/>
+         <RefsDemo/>
     </div>
   );
 }
