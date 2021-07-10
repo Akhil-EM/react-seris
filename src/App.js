@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Parent from './components/ForwardingRef/Parent';
 // import Table from './components/Table';
 // import RefsDemo from './RefsDemo';
 // import Hello from './components/Hello'
@@ -13,12 +14,13 @@ import './App.css';
 // import Form from './components/Form';
 // import LifeCycleA from './components/LifeCycleA';
 // import FragmentDemo from './components/FragmentDemo';
- import FocusInput from './components/focus/FocusInput';
+//  import FocusInput from './components/focus/FocusInput';
+
 function App() {
   
   return (
     <div className="App">
-         <FocusInput/>
+         <Parent/>
     </div>
   );
 }
