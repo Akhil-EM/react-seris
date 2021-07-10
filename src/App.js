@@ -15,12 +15,20 @@ import Parent from './components/ForwardingRef/Parent';
 // import LifeCycleA from './components/LifeCycleA';
 // import FragmentDemo from './components/FragmentDemo';
 //  import FocusInput from './components/focus/FocusInput';
-import Portals  from './components/portals'
+// import Portals  from './components/portals';
+import HeroComponent from './components/HeroComponent';
+import ErrorBountary from './components/ErrorBountary';
 function App() {
   
   return (
     <div className="App">
-         <Portals/>
+      <ErrorBountary>
+         <HeroComponent heroName='batman'/>
+      </ErrorBountary>
+      <ErrorBountary>
+         <HeroComponent heroName='jocker'/>
+      </ErrorBountary>
+    
     </div>
   );
 }
