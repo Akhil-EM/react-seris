@@ -15,12 +15,12 @@ import Parent from './components/ForwardingRef/Parent';
 // import LifeCycleA from './components/LifeCycleA';
 // import FragmentDemo from './components/FragmentDemo';
 //  import FocusInput from './components/focus/FocusInput';
-
+import Portals  from './components/portals'
 function App() {
   
   return (
     <div className="App">
-         <Parent/>
+         <Portals/>
     </div>
   );
 }
