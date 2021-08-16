@@ -1,8 +1,10 @@
 // import logo from './logo.svg';
+
 import './App.css';
+import ParentComponent from './components/PureComponent/ParentComponent';
 // import Parent from './components/ForwardingRef/Parent';
-import ClickCounter from './components/heigherOrderComponets/ClickCounter';
-import HoverCounter from './components/heigherOrderComponets/HoverCounter';
+// import ClickCounter from './components/heigherOrderComponets/ClickCounter';
+// import HoverCounter from './components/heigherOrderComponets/HoverCounter';
 // import Table from './components/Table';
 // import RefsDemo from './RefsDemo';
 // import Hello from './components/Hello'
@@ -20,12 +22,12 @@ import HoverCounter from './components/heigherOrderComponets/HoverCounter';
 // import Portals  from './components/portals';
 // import HeroComponent from './components/HeroComponent';
 // import ErrorBountary from './components/ErrorBountary';
+
 function App() {
   
   return (
     <div className="App">
-        <ClickCounter/>
-        <HoverCounter/>
+       <ParentComponent/>
     </div>
   );
 }
