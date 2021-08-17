@@ -5,6 +5,7 @@ import './App.css';
 import ComponetC from './components/Context/ComponetC';
 import { UserProvider } from './components/Context/userContext';
 import UseStateHook from './components/reactHooks/UseStateHook';
+import UseStateHookWithObject from './components/reactHooks/UseStateHookWithObject';
 import USeStateHookWithPreState from './components/reactHooks/USeStateHookWithPreState';
 // import ClickCounter from './components/higherOrderComponents/ClickCounter';
 // import HoverCounter from './components/higherOrderComponents/HoverCounter';
@@ -43,7 +44,7 @@ function App() {
   return (
 
     <div className="App">
-        <USeStateHookWithPreState/>
+        <UseStateHookWithObject/>
     </div>
   );
 }
