@@ -4,6 +4,7 @@ import React from 'react';
 import './App.css';
 import ComponetC from './components/Context/ComponetC';
 import { UserProvider } from './components/Context/userContext';
+import UseStateHook from './components/reactHooks/UseStateHook';
 // import ClickCounter from './components/higherOrderComponents/ClickCounter';
 // import HoverCounter from './components/higherOrderComponents/HoverCounter';
 // import FrParentInput from './components/ref/FrParentInput';
@@ -41,9 +42,7 @@ function App() {
   return (
 
     <div className="App">
-       <UserProvider value="akhil em">
-       <ComponetC/>
-       </UserProvider>
+        <UseStateHook/>
     </div>
   );
 }
