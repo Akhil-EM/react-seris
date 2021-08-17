@@ -2,6 +2,8 @@
 
 import React from 'react';
 import './App.css';
+import ComponetC from './components/Context/ComponetC';
+import { UserProvider } from './components/Context/userContext';
 // import ClickCounter from './components/higherOrderComponents/ClickCounter';
 // import HoverCounter from './components/higherOrderComponents/HoverCounter';
 // import FrParentInput from './components/ref/FrParentInput';
@@ -28,9 +30,9 @@ import './App.css';
 // import Portals  from './components/portals';
 // import HeroComponent from './components/HeroComponent';
 // import ErrorBountary from './components/ErrorBountary';
-import ClickCounter from './components/RenderProps/ClickCounter';
-import Counter from './components/RenderProps/Counter';
-import HoverCounter from './components/RenderProps/HoverCounter';
+// import ClickCounter from './components/RenderProps/ClickCounter';
+// import Counter from './components/RenderProps/Counter';
+// import HoverCounter from './components/RenderProps/HoverCounter';
 // import User from './components/RenderProps/User';
 
 function App() {
@@ -39,16 +41,9 @@ function App() {
   return (
 
     <div className="App">
-       <Counter 
-              render={(count,incrementCount)=>(
-                <ClickCounter count={count} incrementCount={incrementCount}/>
-                 )}
-                />
-        <Counter 
-              render={(count,incrementCount)=>(
-                <HoverCounter count={count} incrementCount={incrementCount}/>
-                  )}
-                />
+       <UserProvider value="akhil em">
+       <ComponetC/>
+       </UserProvider>
     </div>
   );
 }
