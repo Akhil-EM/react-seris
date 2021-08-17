@@ -1,7 +1,9 @@
 // import logo from './logo.svg';
 
 import './App.css';
-import ParentComponent from './components/PureComponent/ParentComponent';
+import RefDemo from './components/ref/RefDemo';
+import RefParent from './components/ref/RefParent';
+// import ParentComponent from './components/PureComponent/ParentComponent';
 // import Parent from './components/ForwardingRef/Parent';
 // import ClickCounter from './components/heigherOrderComponets/ClickCounter';
 // import HoverCounter from './components/heigherOrderComponets/HoverCounter';
@@ -27,7 +29,7 @@ function App() {
   
   return (
     <div className="App">
-       <ParentComponent/>
+       <RefParent/>
     </div>
   );
 }
