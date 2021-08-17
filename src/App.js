@@ -2,9 +2,11 @@
 
 import React from 'react';
 import './App.css';
-import FrParentInput from './components/ref/FrParentInput';
-import RefDemo from './components/ref/RefDemo';
-import RefParent from './components/ref/RefParent';
+import ClickCounter from './components/higherOrderComponents/ClickCounter';
+import HoverCounter from './components/higherOrderComponents/HoverCounter';
+// import FrParentInput from './components/ref/FrParentInput';
+// import RefDemo from './components/ref/RefDemo';
+// import RefParent from './components/ref/RefParent';
 // import ParentComponent from './components/PureComponent/ParentComponent';
 // import Parent from './components/ForwardingRef/Parent';
 // import ClickCounter from './components/heigherOrderComponets/ClickCounter';
@@ -31,8 +33,10 @@ function App() {
   
   
   return (
+
     <div className="App">
-       <FrParentInput/>
+       <ClickCounter name="Akhil E M"/>
+       <HoverCounter name="Amal babu M M"/>
     </div>
   );
 }
