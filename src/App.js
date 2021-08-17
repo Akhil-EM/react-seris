@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 
+import React from 'react';
 import './App.css';
+import FrParentInput from './components/ref/FrParentInput';
 import RefDemo from './components/ref/RefDemo';
 import RefParent from './components/ref/RefParent';
 // import ParentComponent from './components/PureComponent/ParentComponent';
@@ -27,9 +29,10 @@ import RefParent from './components/ref/RefParent';
 
 function App() {
   
+  
   return (
     <div className="App">
-       <RefParent/>
+       <FrParentInput/>
     </div>
   );
 }
