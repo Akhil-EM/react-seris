@@ -5,6 +5,7 @@ import './App.css';
 import ComponetC from './components/Context/ComponetC';
 import { UserProvider } from './components/Context/userContext';
 import UseStateHook from './components/reactHooks/UseStateHook';
+import USeStateHookWithPreState from './components/reactHooks/USeStateHookWithPreState';
 // import ClickCounter from './components/higherOrderComponents/ClickCounter';
 // import HoverCounter from './components/higherOrderComponents/HoverCounter';
 // import FrParentInput from './components/ref/FrParentInput';
@@ -42,7 +43,7 @@ function App() {
   return (
 
     <div className="App">
-        <UseStateHook/>
+        <USeStateHookWithPreState/>
     </div>
   );
 }
