@@ -2,7 +2,11 @@
 
 import React from 'react';
 import './App.css';
-import UseStateHookWithArray from './components/reactHooks/UseStateHookWithArray';
+import MouseContainer from './components/useEffectHook/MouseContainer';
+// import useEffectHook from './components/Me-learn/UseEffectHook';
+// import UseStateHookWithArray from './components/reactHooks/UseStateHookWithArray';
+// import HookMouse from './components/useEffectHook/HookMouse';
+
 // import ComponetC from './components/Context/ComponetC';
 // import { UserProvider } from './components/Context/userContext';
 // import UseStateHook from './components/reactHooks/UseStateHook';
@@ -45,7 +49,7 @@ function App() {
   return (
 
     <div className="App">
-        <UseStateHookWithArray/>
+        <MouseContainer/>
     </div>
   );
 }
