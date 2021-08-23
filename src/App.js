@@ -2,7 +2,8 @@
 
 import React from 'react';
 import './App.css';
-import MouseContainer from './components/useEffectHook/MouseContainer';
+import IntervalCounter from './components/useEffectHook/IntervalCounter';
+// import MouseContainer from './components/useEffectHook/MouseContainer';
 // import useEffectHook from './components/Me-learn/UseEffectHook';
 // import UseStateHookWithArray from './components/reactHooks/UseStateHookWithArray';
 // import HookMouse from './components/useEffectHook/HookMouse';
@@ -49,7 +50,7 @@ function App() {
   return (
 
     <div className="App">
-        <MouseContainer/>
+        <IntervalCounter/>
     </div>
   );
 }
