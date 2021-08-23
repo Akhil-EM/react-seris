@@ -2,8 +2,8 @@
 
 import React from 'react';
 import './App.css';
-import ComponentC from './components/useContext/ComponentC';
-import ComponentA from './components/useContext/ComponentA';
+
+import CounterOne from './components/useReducer/CounterOne';
 // import IntervalCounter from './components/useEffectHook/IntervalCounter';
 // import MouseContainer from './components/useEffectHook/MouseContainer';
 // import useEffectHook from './components/Me-learn/UseEffectHook';
@@ -45,8 +45,7 @@ import ComponentA from './components/useContext/ComponentA';
 // import Counter from './components/RenderProps/Counter';
 // import HoverCounter from './components/RenderProps/HoverCounter';
 // import User from './components/RenderProps/User';
-export const UserContext = React.createContext();
-export const ChanelContext = React.createContext();
+
 
 function App() {
   
@@ -54,11 +53,7 @@ function App() {
   return (
 
     <div className="App">
-        <UserContext.Provider value={'viswas'}>
-          <ChanelContext.Provider value={'code evaluation'}>
-             <ComponentA/>
-          </ChanelContext.Provider>
-        </UserContext.Provider>
+       <CounterOne/>
     </div>
   );
 }
