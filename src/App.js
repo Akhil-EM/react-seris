@@ -2,7 +2,9 @@
 
 import React from 'react';
 import './App.css';
-import IntervalCounter from './components/useEffectHook/IntervalCounter';
+import ComponentC from './components/useContext/ComponentC';
+import ComponentA from './components/useContext/ComponentA';
+// import IntervalCounter from './components/useEffectHook/IntervalCounter';
 // import MouseContainer from './components/useEffectHook/MouseContainer';
 // import useEffectHook from './components/Me-learn/UseEffectHook';
 // import UseStateHookWithArray from './components/reactHooks/UseStateHookWithArray';
@@ -43,6 +45,8 @@ import IntervalCounter from './components/useEffectHook/IntervalCounter';
 // import Counter from './components/RenderProps/Counter';
 // import HoverCounter from './components/RenderProps/HoverCounter';
 // import User from './components/RenderProps/User';
+export const UserContext = React.createContext();
+export const ChanelContext = React.createContext();
 
 function App() {
   
@@ -50,7 +54,11 @@ function App() {
   return (
 
     <div className="App">
-        <IntervalCounter/>
+        <UserContext.Provider value={'viswas'}>
+          <ChanelContext.Provider value={'code evaluation'}>
+             <ComponentA/>
+          </ChanelContext.Provider>
+        </UserContext.Provider>
     </div>
   );
 }
