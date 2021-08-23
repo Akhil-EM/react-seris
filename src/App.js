@@ -4,6 +4,7 @@ import React from 'react';
 import './App.css';
 
 import CounterOne from './components/useReducer/CounterOne';
+import CounterTwo from './components/useReducer/CounterTwo';
 // import IntervalCounter from './components/useEffectHook/IntervalCounter';
 // import MouseContainer from './components/useEffectHook/MouseContainer';
 // import useEffectHook from './components/Me-learn/UseEffectHook';
@@ -53,7 +54,7 @@ function App() {
   return (
 
     <div className="App">
-       <CounterOne/>
+       <CounterTwo/>
     </div>
   );
 }
