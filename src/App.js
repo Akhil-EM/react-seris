@@ -1,64 +1,42 @@
-// import logo from './logo.svg';
-
-import React from 'react';
+import React,{useReducer} from 'react';
 import './App.css';
+import ComponentA from './components/useReducerWithContext/ComponentA';
+import ComponentB from './components/useReducerWithContext/ComponentB';
+import ComponentC from './components/useReducerWithContext/ComponentC';
 
-import CounterOne from './components/useReducer/CounterOne';
-import CounterThree from './components/useReducer/CounterThree';
-import CounterTwo from './components/useReducer/CounterTwo';
-// import IntervalCounter from './components/useEffectHook/IntervalCounter';
-// import MouseContainer from './components/useEffectHook/MouseContainer';
-// import useEffectHook from './components/Me-learn/UseEffectHook';
-// import UseStateHookWithArray from './components/reactHooks/UseStateHookWithArray';
-// import HookMouse from './components/useEffectHook/HookMouse';
+export const CountContext = React.createContext()
 
-// import ComponetC from './components/Context/ComponetC';
-// import { UserProvider } from './components/Context/userContext';
-// import UseStateHook from './components/reactHooks/UseStateHook';
-// import UseStateHookWithObject from './components/reactHooks/UseStateHookWithObject';
-// import USeStateHookWithPreState from './components/reactHooks/USeStateHookWithPreState';
-// import ClickCounter from './components/higherOrderComponents/ClickCounter';
-// import HoverCounter from './components/higherOrderComponents/HoverCounter';
-// import FrParentInput from './components/ref/FrParentInput';
-// import RefDemo from './components/ref/RefDemo';
-// import RefParent from './components/ref/RefParent';
-// import ParentComponent from './components/PureComponent/ParentComponent';
-// import Parent from './components/ForwardingRef/Parent';
-// import ClickCounter from './components/heigherOrderComponets/ClickCounter';
-// import HoverCounter from './components/heigherOrderComponets/HoverCounter';
-// import Table from './components/Table';
-// import RefsDemo from './RefsDemo';
-// import Hello from './components/Hello'
-// import Welcome from './components/Welcome'
-// import EventClass from './components/EventClass'
-// import EventBind from './components/EventBind'
-// import ParentComponent from './components/ParentComponent'
-// import ConditionalRendering from './components/ConditionalRendering'
-// import ListComponent from './components/ListComponent'
-// import StyleSheet from './components/StyleSheet'
-// import Form from './components/Form';
-// import LifeCycleA from './components/LifeCycleA';
-// import FragmentDemo from './components/FragmentDemo';
-//  import FocusInput from './components/focus/FocusInput';
-// import Portals  from './components/portals';
-// import HeroComponent from './components/HeroComponent';
-// import ErrorBountary from './components/ErrorBountary';
-// import ClickCounter from './components/RenderProps/ClickCounter';
-// import Counter from './components/RenderProps/Counter';
-// import HoverCounter from './components/RenderProps/HoverCounter';
-// import User from './components/RenderProps/User';
+const initialState = 0;
+const reducer = (state,action) => {
+   switch(action){
+     case 'INCREMENT':
+          return state + 1;
+     case 'DECREMENT':
+          return state - 1;
+     case 'RESET':
+          return initialState;
+
+     default:
+        return state;
+   }
+}
 
 
 function App() {
-  
-  
-  return (
+  const [count,dispatch] = useReducer(reducer,initialState);
 
-    <div className="App">
-       <CounterThree/>
-    </div>
+  return ( 
+    <CountContext.Provider value={{countState:count,countDispatch:dispatch}}>
+      <div className="App">
+        Count - {count}
+        <ComponentA/>
+        <ComponentB/>
+        <ComponentC/>
+      </div>
+    </CountContext.Provider>
   );
 }
+
 
 
 export default App;
